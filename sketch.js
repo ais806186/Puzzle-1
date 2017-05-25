@@ -65,13 +65,14 @@ image(keypad,250,100);
   
   if (stateofnumber1 == 1)
   {
-
-    image(one,260,38,20,50);
+fill(0,0,0);
+textSize(50)
+    text('1',260,80);
   }
   
   if (stateofnumber2 == 1)
   {
-  image(eight,310,38,45,50);
+    text('8',320,80);
   }
   
   if (stateofnumber3 == 1) 
@@ -82,12 +83,13 @@ image(keypad,250,100);
   if (stateofnumber4 == 1)
   {
   image(nine,430,40,35,50);
-    image(one,260,38,20,50);
+
+    text('1',260,80);
   }
 
   if (stateofnumber5 == 1) 
   {
-    image(nine,310,38,45,50);
+    text('9',320,80)
   }
   
   if(stateofnumber6 == 1)
@@ -102,8 +104,10 @@ image(keypad,250,100);
   
   if(stateofnumber9 == 1)
   {
-    image(three,375,35,35,50);
+    text('3',380,80);
   }
+
+  textSize(10);
   paintNavigation();
   
  
@@ -128,7 +132,7 @@ image(keypad,250,100);
     lock == true;
   
     stateofnumber1 = 1;
-    stateofnumber2 = 0;
+    stateofnumber2 = 1;
     stateofnumber3 = 0;
     stateofnumber4 = 0;
     stateofnumber9 = 0;
